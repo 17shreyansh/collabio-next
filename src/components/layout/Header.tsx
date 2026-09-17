@@ -13,7 +13,7 @@ export function Header() {
   const [platformsOpen, setPlatformsOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobilePlatformsOpen, setMobilePlatformsOpen] = useState(false);
-  
+
   const servicesTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const platformsTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -66,10 +66,10 @@ export function Header() {
           </button>
           <Link href="/" className="cb-logo-link">
             <Image
-              src="/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/images/fame-keeda-logo.svg"
+              src="/logo.png"
               alt={siteConfig.name}
-              width={140}
-              height={36}
+              width={80}
+              height={80}
               priority
             />
           </Link>

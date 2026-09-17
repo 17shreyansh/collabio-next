@@ -11,19 +11,19 @@ export function Footer() {
   return (
     <footer className="bg-cb-navy border-t border-white/5 pt-16 pb-8">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16 mb-16">
-          
+
           {/* Column 1 - Logo & About */}
           <div>
             <div className="mb-6">
               <Link href="/">
-                <Image 
-                  src="/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/images/fame-keeda-logo.svg"
+                <Image
+                  src="/logo.png"
                   alt={siteConfig.name}
-                  width={160}
-                  height={40}
-                  className="brightness-0 invert"
+                  width={80}
+                  height={80}
+                // className="brightness-0 invert"
                 />
               </Link>
             </div>
