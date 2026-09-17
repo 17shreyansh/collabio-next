@@ -1,4 +1,5 @@
-import { Navbar } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/Navbar";
+import { getPageContent } from "@/lib/content";
+import { notFound } from "next/navigation";
 import { HeroSection } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/HeroSection";
 import { SocialProofStats } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/SocialProofStats";
 import { BrandLogosCarousel } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/BrandLogosCarousel";
@@ -9,14 +10,14 @@ import { PlatformsSection } from "@/components/sites/famekeeda-com-a1b2c3d4/root
 import { SuccessStories } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/SuccessStories";
 import { FoundersSection } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/FoundersSection";
 import { CTABanner } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/CTABanner";
-import { Footer } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/Footer";
-import { ContactModal } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/ContactModal";
 
 export default function FameKeedaClone() {
+  const data = getPageContent("home");
+  if (!data) return notFound();
+
   return (
     <main className="min-h-screen bg-white">
-      <Navbar />
-      <HeroSection />
+      <HeroSection {...data.frontmatter.hero} />
       <SocialProofStats />
       <BrandLogosCarousel />
       <InfluencerAgencyShowcase />
@@ -26,8 +27,6 @@ export default function FameKeedaClone() {
       <SuccessStories />
       <FoundersSection />
       <CTABanner />
-      <Footer />
-      <ContactModal />
     </main>
   );
 }

@@ -23,152 +23,54 @@ const values = [
 
 export function OurPhilosophy() {
   return (
-    <section className="fk-philosophy-section">
-      <div className="fk-philosophy-header">
-        <h2 className="fk-section-title">
-          Our <span className="fk-section-title-accent">Philosophy</span>
+    <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-bold text-fk-dark">
+          Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-fk-red to-fk-orange">Philosophy</span>
         </h2>
       </div>
 
-      <div className="fk-philosophy-grid">
+      <div className="flex flex-col md:flex-row gap-5 items-stretch">
         {/* Left Column: Mission + Vision */}
-        <div className="fk-philosophy-left">
-          <div className="fk-philosophy-card">
-            <div className="fk-philosophy-card-inner">
-              <div className="fk-philosophy-icon-row">
-                <Image src={`${ASSET}/target.gif`} alt="Mission" width={48} height={48} unoptimized />
-                <span className="fk-philosophy-label">Mission</span>
-              </div>
-              <p className="fk-philosophy-text">
-                To redefine influencer marketing by uniting brands and creators across real and virtual worlds, forging authentic connections that fuel tangible, global impact.
-              </p>
+        <div className="flex-1 flex flex-col gap-5">
+          <div className="bg-[#f7f7f7] rounded-[20px] border border-[#eee] flex-1 flex flex-col p-7 hover:shadow-sm transition-shadow">
+            <div className="flex items-center gap-3 mb-4">
+              <Image src={`${ASSET}/target.gif`} alt="Mission" width={48} height={48} unoptimized />
+              <span className="text-[20px] font-bold text-fk-dark">Mission</span>
             </div>
+            <p className="text-[14px] text-[#666] leading-[1.7]">
+              To redefine influencer marketing by uniting brands and creators across real and virtual worlds, forging authentic connections that fuel tangible, global impact.
+            </p>
           </div>
-          <div className="fk-philosophy-card">
-            <div className="fk-philosophy-card-inner">
-              <div className="fk-philosophy-icon-row">
-                <Image src={`${ASSET}/view.gif`} alt="Vision" width={48} height={48} unoptimized />
-                <span className="fk-philosophy-label">Vision</span>
-              </div>
-              <p className="fk-philosophy-text">
-                To lead a new era of interconnected influence, where empathy, AI-driven insights, and boundary-pushing ideas spark trust, prosperity, and enduring innovation.
-              </p>
+          <div className="bg-[#f7f7f7] rounded-[20px] border border-[#eee] flex-1 flex flex-col p-7 hover:shadow-sm transition-shadow">
+            <div className="flex items-center gap-3 mb-4">
+              <Image src={`${ASSET}/view.gif`} alt="Vision" width={48} height={48} unoptimized />
+              <span className="text-[20px] font-bold text-fk-dark">Vision</span>
             </div>
+            <p className="text-[14px] text-[#666] leading-[1.7]">
+              To lead a new era of interconnected influence, where empathy, AI-driven insights, and boundary-pushing ideas spark trust, prosperity, and enduring innovation.
+            </p>
           </div>
         </div>
 
         {/* Right Column: Values */}
-        <div className="fk-philosophy-right">
-          <div className="fk-philosophy-card fk-philosophy-values-card">
-            <div className="fk-philosophy-card-inner">
-              <div className="fk-philosophy-icon-row">
-                <Image src={`${ASSET}/value.gif`} alt="Values" width={48} height={48} unoptimized />
-                <span className="fk-philosophy-label">Values</span>
-              </div>
-              <ul className="fk-philosophy-values-list">
-                {values.map((v) => (
-                  <li key={v.title}>
-                    <strong>{v.title}</strong><br />
-                    {v.desc}
-                  </li>
-                ))}
-              </ul>
+        <div className="flex-1 flex">
+          <div className="bg-[#f7f7f7] rounded-[20px] border border-[#eee] flex-1 flex flex-col p-7 hover:shadow-sm transition-shadow">
+            <div className="flex items-center gap-3 mb-4">
+              <Image src={`${ASSET}/value.gif`} alt="Values" width={48} height={48} unoptimized />
+              <span className="text-[20px] font-bold text-fk-dark">Values</span>
             </div>
+            <ul className="flex flex-col gap-4">
+              {values.map((v) => (
+                <li key={v.title} className="text-[14px] text-[#666] leading-[1.6]">
+                  <strong className="text-fk-dark">{v.title}</strong><br />
+                  {v.desc}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
-
-      <style>{`
-        .fk-philosophy-section {
-          padding: 80px 24px;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-        .fk-philosophy-header {
-          text-align: center;
-          margin-bottom: 48px;
-        }
-        .fk-section-title {
-          font-size: 36px;
-          font-weight: 700;
-          color: var(--fk-dark, #1A1A1A);
-        }
-        .fk-section-title-accent {
-          background: var(--fk-gradient, linear-gradient(90deg, #BE1622, #E84E1B));
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
-        .fk-philosophy-grid {
-          display: flex;
-          gap: 20px;
-          align-items: stretch;
-        }
-        .fk-philosophy-left {
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-        }
-        .fk-philosophy-right {
-          flex: 1;
-          display: flex;
-        }
-        .fk-philosophy-card {
-          background: #f7f7f7;
-          border-radius: 20px;
-          border: 1px solid #eee;
-          flex: 1;
-        }
-        .fk-philosophy-card-inner {
-          padding: 28px;
-        }
-        .fk-philosophy-icon-row {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          margin-bottom: 16px;
-        }
-        .fk-philosophy-label {
-          font-size: 20px;
-          font-weight: 700;
-          color: var(--fk-dark, #1A1A1A);
-        }
-        .fk-philosophy-text {
-          font-size: 14px;
-          color: #666;
-          line-height: 1.7;
-        }
-        .fk-philosophy-values-card {
-          display: flex;
-          flex-direction: column;
-        }
-        .fk-philosophy-values-list {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-          display: flex;
-          flex-direction: column;
-          gap: 16px;
-        }
-        .fk-philosophy-values-list li {
-          font-size: 14px;
-          color: #666;
-          line-height: 1.6;
-        }
-        .fk-philosophy-values-list li strong {
-          color: var(--fk-dark, #1A1A1A);
-        }
-
-        @media (max-width: 768px) {
-          .fk-philosophy-grid {
-            flex-direction: column;
-          }
-          .fk-philosophy-section {
-            padding: 48px 16px;
-          }
-        }
-      `}</style>
     </section>
   );
 }

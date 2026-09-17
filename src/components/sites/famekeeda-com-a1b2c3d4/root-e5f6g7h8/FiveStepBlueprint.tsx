@@ -69,85 +69,106 @@ export function FiveStepBlueprint() {
   }, []);
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 bg-white relative overflow-hidden">
+      {/* Background Decorative Blur */}
+      <div className="absolute top-1/4 -left-64 w-96 h-96 bg-fk-red/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-fk-dark mb-4">
-            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-fk-red to-fk-orange">5 Step Influencer Marketing Blueprint</span>
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-fk-dark mb-6 tracking-tight">
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-fk-red to-fk-orange">5 Step Influencer Blueprint</span>
           </h2>
+          <p className="text-lg text-gray-500 max-w-2xl mx-auto">
+            From raw ideas to viral moments, this is how we craft campaigns that command attention and drive conversions.
+          </p>
         </div>
 
         {/* Desktop Layout - Split */}
-        <div className="hidden lg:flex gap-16 items-start">
+        <div className="hidden lg:flex gap-20 items-start relative">
           
           {/* Left Sticky Image Area */}
-          <div className="w-1/2 sticky top-32 h-[500px] rounded-[2rem] overflow-hidden shadow-2xl bg-gray-100 border border-gray-200">
+          <div className="w-[45%] sticky top-32 h-[600px] rounded-[2.5rem] overflow-hidden shadow-2xl bg-fk-dark border-[8px] border-gray-50/50">
             {steps.map((step, idx) => (
-              <img 
+              <div 
                 key={idx}
-                src={step.gif}
-                alt={`Step ${step.num}`}
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ease-in-out ${
-                  idx === activeStep ? "opacity-100 z-10" : "opacity-0 z-0"
+                className={`absolute inset-0 transition-all duration-700 ease-out transform ${
+                  idx === activeStep ? "opacity-100 scale-100 z-10" : "opacity-0 scale-105 z-0"
                 }`}
-              />
-            ))}
-          </div>
-
-          {/* Right Scrolling Steps Area */}
-          <div className="w-1/2 pb-[30vh]">
-            <div className="relative border-l-2 border-gray-200 pl-12 ml-6">
-              {steps.map((step, idx) => (
-                <div 
-                  key={idx} 
-                  ref={(el) => { stepRefs.current[idx] = el; }}
-                  data-index={idx}
-                  className="mb-32 relative"
-                >
-                  {/* Timeline Dot/Number */}
-                  <div className={`absolute -left-[5.5rem] top-0 w-16 h-16 rounded-full flex items-center justify-center font-bold text-xl border-4 transition-colors duration-300 ${
-                    idx === activeStep 
-                      ? "bg-fk-red text-white border-fk-red shadow-lg shadow-red-500/30" 
-                      : "bg-white text-gray-400 border-gray-200"
-                  }`}>
-                    {step.num}
-                  </div>
-                  
-                  <h3 className={`text-2xl font-bold mb-4 transition-colors duration-300 ${
-                    idx === activeStep ? "text-fk-red" : "text-fk-dark"
-                  }`}>
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-600 text-lg leading-relaxed">
-                    {step.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile Layout - Stacked */}
-        <div className="lg:hidden flex flex-col gap-12">
-          {steps.map((step, idx) => (
-            <div key={idx} className="flex flex-col gap-6">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-fk-red text-white flex items-center justify-center font-bold text-lg flex-shrink-0 shadow-md">
-                  {step.num}
-                </div>
-                <h3 className="text-xl font-bold text-fk-dark leading-tight">{step.title}</h3>
-              </div>
-              
-              <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-lg border border-gray-100 relative">
+              >
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
                 <img 
                   src={step.gif}
                   alt={`Step ${step.num}`}
                   className="w-full h-full object-cover"
                 />
+                <div className="absolute bottom-10 left-10 right-10 z-20">
+                   <div className="text-fk-red font-bold text-lg mb-2">Step {step.num}</div>
+                   <h4 className="text-white text-2xl font-semibold leading-tight">{step.title}</h4>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Right Scrolling Steps Area */}
+          <div className="w-[55%] pb-[45vh] pt-12">
+            <div className="relative border-l-2 border-gray-100 pl-16 ml-8">
+              {steps.map((step, idx) => {
+                const isActive = idx === activeStep;
+                return (
+                  <div 
+                    key={idx} 
+                    ref={(el) => { stepRefs.current[idx] = el; }}
+                    data-index={idx}
+                    className={`mb-40 relative transition-all duration-500 ${isActive ? 'opacity-100 translate-x-0' : 'opacity-30 translate-x-4'}`}
+                  >
+                    {/* Timeline Dot/Number */}
+                    <div className={`absolute -left-[5rem] top-0 w-16 h-16 rounded-full flex items-center justify-center font-bold text-xl border-4 transition-all duration-500 ${
+                      isActive 
+                        ? "bg-fk-red text-white border-fk-red shadow-xl shadow-red-500/20 scale-110" 
+                        : "bg-gray-50 text-gray-400 border-white"
+                    }`}>
+                      {step.num}
+                    </div>
+                    
+                    <h3 className={`text-3xl font-bold mb-6 leading-tight transition-colors duration-500 ${
+                      isActive ? "text-fk-dark" : "text-gray-400"
+                    }`}>
+                      {step.title}
+                    </h3>
+                    <p className={`text-xl leading-relaxed transition-colors duration-500 ${
+                      isActive ? "text-gray-600" : "text-gray-400"
+                    }`}>
+                      {step.desc}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Layout - Stacked */}
+        <div className="lg:hidden flex flex-col gap-16">
+          {steps.map((step, idx) => (
+            <div key={idx} className="flex flex-col gap-6">
+              <div className="flex items-center gap-4">
+                <div className="w-14 h-14 rounded-full bg-fk-red text-white flex items-center justify-center font-bold text-xl flex-shrink-0 shadow-lg shadow-red-500/20">
+                  {step.num}
+                </div>
+                <h3 className="text-2xl font-bold text-fk-dark leading-tight">{step.title}</h3>
               </div>
               
-              <p className="text-gray-600 leading-relaxed">
+              <div className="w-full h-[300px] rounded-[2rem] overflow-hidden shadow-xl relative group">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
+                <img 
+                  src={step.gif}
+                  alt={`Step ${step.num}`}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
+              
+              <p className="text-gray-600 text-lg leading-relaxed px-2">
                 {step.desc}
               </p>
             </div>

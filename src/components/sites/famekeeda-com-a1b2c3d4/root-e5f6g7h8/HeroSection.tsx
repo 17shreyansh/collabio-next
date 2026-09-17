@@ -3,14 +3,20 @@
 import { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 
-const ASSET = "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8";
+export interface HeroSectionProps {
+  title: string;
+  titleHighlight: string;
+  desc: string;
+  buttonText: string;
+  videoSrc: string;
+  poster: string;
+}
 
-export function HeroSection() {
+export function HeroSection({ title, titleHighlight, desc, buttonText, videoSrc, poster }: HeroSectionProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
 
-  // Intersection observer to pause video when not in view
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -64,52 +70,44 @@ export function HeroSection() {
 
   return (
     <section className="relative w-full h-[100svh] overflow-hidden bg-fk-dark">
-      {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
-        {/* We use a placeholder since downloading the huge video was skipped or we just use CDN */}
         <video
           ref={videoRef}
           autoPlay
           muted={isMuted}
           loop
           playsInline
-          poster={`${ASSET}/images/hero-poster.webp`}
+          poster={poster}
           className="object-cover w-full h-full opacity-60"
         >
-          <source src="https://cdn.famekeeda.com/assets/home-hero_assets/home_hero.mp4" type="video/mp4" />
+          <source src={videoSrc} type="video/mp4" />
         </video>
-        {/* Dark overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] via-transparent to-transparent opacity-80"></div>
       </div>
 
-      {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 pt-20">
-        <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 max-w-5xl">
-          Fueling Brand Growth Through Impactful
-          <br className="hidden md:block" />
-          <span className="text-fk-red"> Influencer Campaigns</span>
-        </h1>
+        <h1 
+          className="text-white text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 max-w-5xl [&>span]:text-fk-red"
+          dangerouslySetInnerHTML={{ __html: title + (titleHighlight ? `<br class="hidden md:block" /><span> ${titleHighlight}</span>` : "") }}
+        />
         
         <p className="text-white/80 text-lg md:text-xl max-w-2xl mb-8">
-          We connect brands with the right voices to create authentic stories that resonate and drive measurable results.
+          {desc}
         </p>
 
         <button 
           className="bg-white text-fk-dark rounded-full px-8 py-3 font-semibold text-lg hover:bg-gray-100 transition-colors flex items-center gap-2 group"
           onClick={() => {
-            // Trigger contact modal (handled via layout or context typically, 
-            // but we can just use a simple event for now or rely on parent)
             document.dispatchEvent(new CustomEvent('open-contact-modal'));
           }}
         >
-          Start Your Campaign
+          {buttonText}
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="transition-transform group-hover:translate-x-1">
             <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </button>
       </div>
 
-      {/* Video Controls (Bottom Right) */}
       <div className="absolute bottom-8 right-8 z-20 flex items-center gap-3 bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/10">
         <button onClick={togglePlay} className="text-white hover:text-fk-red transition-colors" aria-label={isPlaying ? "Pause" : "Play"}>
           {isPlaying ? (

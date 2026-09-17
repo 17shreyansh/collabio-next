@@ -33,7 +33,7 @@ export function AboutHero() {
   return (
     <section>
       {/* Team Photo Banner */}
-      <div className="fk-about-team-banner">
+      <div className="w-full overflow-hidden rounded-b-3xl shadow-sm">
         <Image
           src={`${ASSET}/whole-team-img.webp`}
           alt="Fame Keeda Complete Team"
@@ -45,44 +45,49 @@ export function AboutHero() {
       </div>
 
       {/* About + Story Cards */}
-      <div className="fk-about-story-section">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 flex flex-col lg:flex-row gap-12 lg:gap-16 relative">
+        
         {/* Left Column: Title + Mascot */}
-        <div className="fk-about-left-col">
-          <h1 className="fk-about-title">
-            About <br />
-            <span className="fk-about-title-accent">Fame Keeda</span>
+        <div className="lg:w-[300px] lg:sticky lg:top-28 self-start text-center lg:text-left shrink-0">
+          <h1 className="text-4xl md:text-5xl font-bold text-fk-dark leading-tight mb-8 lg:mb-10">
+            About <br className="hidden lg:block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-fk-red to-fk-orange">Fame Keeda</span>
           </h1>
-          <div className="fk-about-mascot">
+          <div className="mt-6 flex justify-center lg:justify-start">
             <Image
               src={`${ASSET}/iconic-character.webp`}
               alt="Fame Keeda Iconic Character"
               width={280}
               height={380}
               style={{ width: "100%", maxWidth: 280, height: "auto" }}
+              className="drop-shadow-lg"
             />
           </div>
         </div>
 
         {/* Vertical Line */}
-        <div className="fk-about-vl" />
+        <div className="hidden lg:block w-px bg-gray-200 shrink-0" />
 
         {/* Right Column: Story Cards */}
-        <div className="fk-about-right-col">
+        <div className="flex-1 flex flex-col gap-16">
           {storyCards.map((card) => (
-            <div key={card.num} className="fk-about-info-card">
-              <div className="fk-about-info-img">
+            <div key={card.num} className="flex flex-col gap-6 group">
+              <div className="rounded-2xl overflow-hidden shadow-md group-hover:shadow-lg transition-shadow duration-300">
                 <Image
                   src={card.image}
                   alt={card.title}
-                  width={400}
-                  height={250}
-                  style={{ width: "100%", height: "auto", borderRadius: 16, objectFit: "cover" }}
+                  width={800}
+                  height={450}
+                  style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                  className="group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="fk-about-info-content">
-                <div className="fk-about-info-hr" />
-                <h3 className="fk-about-info-title">{card.num}. {card.title}</h3>
-                <p className="fk-about-info-desc">
+              <div className="px-2">
+                <div className="w-10 h-1 bg-gradient-to-r from-fk-red to-fk-orange rounded-full mb-4" />
+                <h3 className="text-[22px] font-bold text-fk-dark mb-3">
+                  {card.num}. {card.title}
+                </h3>
+                <p className="text-[15px] text-gray-500 leading-relaxed">
                   {card.desc.split("\n\n").map((para, i) => (
                     <span key={i}>
                       {i > 0 && <><br /><br /></>}
@@ -95,108 +100,6 @@ export function AboutHero() {
           ))}
         </div>
       </div>
-
-      <style>{`
-        .fk-about-team-banner {
-          width: 100%;
-          overflow: hidden;
-          border-radius: 0 0 24px 24px;
-        }
-        .fk-about-story-section {
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 80px 24px 60px;
-          display: flex;
-          gap: 48px;
-          position: relative;
-        }
-        .fk-about-left-col {
-          flex: 0 0 300px;
-          position: sticky;
-          top: 100px;
-          align-self: flex-start;
-        }
-        .fk-about-title {
-          font-size: 48px;
-          font-weight: 700;
-          color: var(--fk-dark, #1A1A1A);
-          line-height: 1.1;
-          margin-bottom: 40px;
-        }
-        .fk-about-title-accent {
-          background: var(--fk-gradient, linear-gradient(90deg, #BE1622, #E84E1B));
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
-        .fk-about-mascot {
-          margin-top: 24px;
-        }
-        .fk-about-vl {
-          width: 1px;
-          background: #D9DBE9;
-          flex-shrink: 0;
-        }
-        .fk-about-right-col {
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          gap: 48px;
-        }
-        .fk-about-info-card {
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-        }
-        .fk-about-info-img {
-          border-radius: 16px;
-          overflow: hidden;
-        }
-        .fk-about-info-content {
-          padding: 0 4px;
-        }
-        .fk-about-info-hr {
-          width: 40px;
-          height: 3px;
-          background: var(--fk-gradient, linear-gradient(90deg, #BE1622, #E84E1B));
-          border-radius: 2px;
-          margin-bottom: 16px;
-        }
-        .fk-about-info-title {
-          font-size: 22px;
-          font-weight: 700;
-          color: var(--fk-dark, #1A1A1A);
-          margin-bottom: 12px;
-        }
-        .fk-about-info-desc {
-          font-size: 15px;
-          color: #777;
-          line-height: 1.7;
-        }
-
-        @media (max-width: 768px) {
-          .fk-about-story-section {
-            flex-direction: column;
-            padding: 40px 16px 40px;
-            gap: 32px;
-          }
-          .fk-about-left-col {
-            position: static;
-            flex: none;
-            text-align: center;
-          }
-          .fk-about-title {
-            font-size: 36px;
-          }
-          .fk-about-vl {
-            display: none;
-          }
-          .fk-about-mascot {
-            display: flex;
-            justify-content: center;
-          }
-        }
-      `}</style>
     </section>
   );
 }

@@ -1,19 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { Navbar } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/Navbar";
-import { Footer } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/Footer";
 
 export default function ContactPage() {
   const [userType, setUserType] = useState<"brand" | "influencer" | "agency">("brand");
 
   return (
     <main className="min-h-screen bg-white pt-24">
-      <Navbar />
-      
       <section className="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16">
-          
           {/* Left - Contact Info */}
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-fk-dark mb-6">Let's talk about your next <span className="text-fk-red">big campaign</span>.</h1>
@@ -120,11 +115,8 @@ export default function ContactPage() {
               </button>
             </form>
           </div>
-
         </div>
       </section>
-
-      <Footer />
     </main>
   );
 }

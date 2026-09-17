@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { seoConfig } from "@/config/seo";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { ContactModal } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/ContactModal";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -10,22 +14,16 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
-  title: "Best Influencer Marketing Agency In India | Fame Keeda Networks",
-  description:
-    "Discover Fame Keeda Networks, India's top influencer marketing agency, connecting brands with powerful personalities to drive engagement and growth.",
-  openGraph: {
-    title: "Best Influencer Marketing Agency In India | Fame Keeda Networks",
-    description:
-      "Boost your brand with Fame Keeda, a leading influencer marketing agency in India. Connect with top influencers to drive engagement, reach, and conversions.",
-    images: ["/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/seo/og-image.png"],
-  },
+  metadataBase: new URL(seoConfig.openGraph.url),
+  title: seoConfig.defaultTitle,
+  description: seoConfig.description,
+  openGraph: seoConfig.openGraph,
   twitter: {
-    card: "summary_large_image",
-    title: "Best Influencer Marketing Agency In India | Fame Keeda Networks",
-    description:
-      "Boost your brand with Fame Keeda, a leading influencer marketing agency in India. Connect with top influencers to drive engagement, reach, and conversions.",
-    images: ["/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/seo/og-image.png"],
+    card: seoConfig.twitter.cardType as any,
+    site: seoConfig.twitter.site,
+    title: seoConfig.openGraph.title,
+    description: seoConfig.openGraph.description,
+    images: seoConfig.openGraph.images.map(img => img.url),
   },
   icons: {
     icon: "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/seo/favicon.webp",
@@ -40,7 +38,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} antialiased`}>
       <body className="min-h-full flex flex-col font-[var(--font-poppins)]">
-        {children}
+        <Header />
+        <div className="flex-1">
+          {children}
+        </div>
+        <Footer />
+        
+        {/* We keep ContactModal here globally since it's triggered via CustomEvent */}
+        <ContactModal />
       </body>
     </html>
   );
