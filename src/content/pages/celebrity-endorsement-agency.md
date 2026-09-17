@@ -1,5 +1,5 @@
 ---
-title: "Celebrity Endorsements Agency | Fame Keeda"
+title: "Celebrity Endorsements Agency | Collabio"
 description: "Elevate your brand's prestige and reach millions instantly by partnering with top-tier celebrities and industry icons."
 hero:
   title: "Celebrity <br /><span>Endorsements</span>"

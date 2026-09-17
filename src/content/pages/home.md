@@ -1,6 +1,6 @@
 ---
-title: "Best Influencer Marketing Agency In India | Fame Keeda Networks"
-description: "Discover Fame Keeda Networks, India's top influencer marketing agency, connecting brands with powerful personalities to drive engagement and growth."
+title: "Best Influencer Marketing Agency In India | Collabio"
+description: "Discover Collabio, India's top influencer marketing agency, connecting brands with powerful personalities to drive engagement and growth."
 hero:
   title: "Fueling Brand Growth Through Impactful"
   titleHighlight: "Influencer Campaigns"

@@ -157,7 +157,7 @@ export function Navbar() {
           <Link href="/" className="fk-logo-link">
             <Image
               src={`${ASSET}/images/fame-keeda-logo.svg`}
-              alt="Fame Keeda Networks"
+              alt="Collabio"
               width={140}
               height={36}
               priority
@@ -255,7 +255,7 @@ export function Navbar() {
           </div>
 
           <a
-            href="https://www.famekeeda.com/blogs/"
+            href="https://collabio.co.in/blogs/"
             target="_blank"
             rel="noopener noreferrer"
             className="fk-nav-link"
@@ -316,7 +316,7 @@ export function Navbar() {
         </div>
 
         <a
-          href="https://www.famekeeda.com/blogs/"
+          href="https://collabio.co.in/blogs/"
           target="_blank"
           rel="noopener noreferrer"
           className="fk-mobile-link"

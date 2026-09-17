@@ -25,7 +25,7 @@ export function MeetOurTeam() {
         <div className="sm:col-span-2 rounded-[20px] overflow-hidden min-h-[350px]">
           <Image
             src={`${ASSET}/founders-img.webp`}
-            alt="Fame Keeda Founders"
+            alt="Collabio Founders"
             width={800}
             height={500}
             style={{ width: "100%", height: "100%", objectFit: "cover" }}

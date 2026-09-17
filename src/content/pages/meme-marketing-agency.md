@@ -1,5 +1,5 @@
 ---
-title: "Meme Marketing Agency | Fame Keeda"
+title: "Meme Marketing Agency | Collabio"
 description: "Go viral and connect with Gen Z and Millennials through culturally relevant, highly shareable meme campaigns."
 hero:
   title: "Meme <br /><span>Marketing</span>"

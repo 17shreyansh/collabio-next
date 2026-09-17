@@ -1,14 +1,14 @@
 import { siteConfig } from "./site";
 
 export const seoConfig = {
-  defaultTitle: "Best Influencer Marketing Agency In India | Fame Keeda Networks",
-  titleTemplate: "%s | Fame Keeda Networks",
+  defaultTitle: "Influencer & AI Marketing Agency | Collabio",
+  titleTemplate: "%s | Collabio",
   description: siteConfig.description,
   openGraph: {
     type: "website",
     locale: "en_IN",
     url: siteConfig.url,
-    title: "Best Influencer Marketing Agency In India | Fame Keeda Networks",
+    title: "Influencer & AI Marketing Agency | Collabio",
     description: siteConfig.description,
     siteName: siteConfig.name,
     images: [
@@ -21,8 +21,8 @@ export const seoConfig = {
     ],
   },
   twitter: {
-    handle: "@famekeeda",
-    site: "@famekeeda",
+    handle: "@collabio",
+    site: "@collabio",
     cardType: "summary_large_image",
   },
 };

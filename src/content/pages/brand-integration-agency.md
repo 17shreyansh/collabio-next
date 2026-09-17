@@ -1,5 +1,5 @@
 ---
-title: "Brand Integration Agency | Fame Keeda"
+title: "Brand Integration Agency | Collabio"
 description: "Seamlessly integrate your brand into engaging creator content to drive authentic awareness and engagement."
 hero:
   title: "Brand <br /><span>Integration Agency</span>"

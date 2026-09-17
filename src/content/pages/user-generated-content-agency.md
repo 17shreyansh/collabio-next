@@ -1,5 +1,5 @@
 ---
-title: "User Generated Content (UGC) Agency | Fame Keeda"
+title: "User Generated Content (UGC) Agency | Collabio"
 description: "Harness the power of everyday consumers to create authentic, highly converting content for your brand."
 hero:
   title: "User Generated <br /><span>Content (UGC)</span>"

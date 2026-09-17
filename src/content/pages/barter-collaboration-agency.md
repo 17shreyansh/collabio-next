@@ -1,5 +1,5 @@
 ---
-title: "Barter Campaigns Agency | Fame Keeda"
+title: "Barter Campaigns Agency | Collabio"
 description: "Scale your influencer marketing efficiently through mutually beneficial product-for-post collaborations."
 hero:
   title: "Barter <br /><span>Campaigns</span>"

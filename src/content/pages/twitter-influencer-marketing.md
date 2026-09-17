@@ -1,5 +1,5 @@
 ---
-title: "Twitter (X) Influencer Marketing Agency | Fame Keeda"
+title: "Twitter (X) Influencer Marketing Agency | Collabio"
 description: "Spark conversations, trend globally, and engage with crypto, tech, and news-focused audiences in real-time."
 hero:
   title: "Twitter (X) <br />Influencer Marketing"

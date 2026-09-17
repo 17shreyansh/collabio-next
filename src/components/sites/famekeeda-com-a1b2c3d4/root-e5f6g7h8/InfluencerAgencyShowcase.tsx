@@ -15,7 +15,7 @@ export function InfluencerAgencyShowcase() {
             Best <span className="text-transparent bg-clip-text bg-gradient-to-r from-fk-red to-fk-orange">Influencer Marketing</span> Agency
           </h2>
           <p className="text-gray-600 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-            At Fame Keeda, we specialize in helping brands connect with the right influencers to reach their target audience and drive results. From strategy to viral execution, we guide you through every step.
+            At Collabio, we specialize in helping brands connect with the right influencers to reach their target audience and drive results. From strategy to viral execution, we guide you through every step.
           </p>
         </div>
 

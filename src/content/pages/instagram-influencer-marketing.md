@@ -1,5 +1,5 @@
 ---
-title: "Instagram Influencer Marketing Agency | Fame Keeda"
+title: "Instagram Influencer Marketing Agency | Collabio"
 description: "Tap into visual storytelling, viral Reels, and high-converting Stories with Instagram's highly engaged audience."
 hero:
   title: "Instagram <br /><span>Influencer Marketing</span>"

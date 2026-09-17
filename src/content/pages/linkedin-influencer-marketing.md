@@ -1,5 +1,5 @@
 ---
-title: "LinkedIn Influencer Marketing Agency | Fame Keeda"
+title: "LinkedIn Influencer Marketing Agency | Collabio"
 description: "Reach decision-makers, industry professionals, and B2B buyers through thought leadership and professional networking."
 hero:
   title: "LinkedIn <br />Influencer Marketing"

@@ -1,6 +1,6 @@
 ---
-title: "Contact Us | Fame Keeda Networks"
-description: "Get in touch with Fame Keeda Networks to discuss your next big influencer marketing campaign."
+title: "Contact Us | Collabio"
+description: "Get in touch with Collabio to discuss your next big influencer marketing campaign."
 contact:
   title: "Let's talk about your next"
   titleHighlight: "big campaign."

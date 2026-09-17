@@ -14,13 +14,13 @@ export function Footer() {
             <div className="mb-6">
               <Image 
                 src={`${ASSET}/images/fame-keeda-logo.svg`}
-                alt="Fame Keeda Logo"
+                alt="Collabio Logo"
                 width={160}
                 height={40}
               />
             </div>
             <p className="text-gray-600 text-sm leading-relaxed mb-6">
-              Fame Keeda Networks is India's leading influencer marketing agency, dedicated to bridging the gap between brands and creators for impactful and measurable campaigns.
+              Collabio is a full-service influencer marketing agency that helps brands connect with the right audiences through authentic creator collaborations.
             </p>
             <div className="flex gap-4">
               {/* Social Icons (Placeholders for actual svg links) */}
@@ -43,7 +43,7 @@ export function Footer() {
               <li><a href="/" className="text-gray-600 hover:text-fk-red transition-colors text-sm font-medium">Home</a></li>
               <li><a href="/about-us" className="text-gray-600 hover:text-fk-red transition-colors text-sm font-medium">About Us</a></li>
               <li><a href="/case-studies" className="text-gray-600 hover:text-fk-red transition-colors text-sm font-medium">Case Studies</a></li>
-              <li><a href="https://www.famekeeda.com/blogs/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-fk-red transition-colors text-sm font-medium">Blogs</a></li>
+              <li><a href="https://collabio.co.in/blogs/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-fk-red transition-colors text-sm font-medium">Blogs</a></li>
               <li><a href="/contact" className="text-gray-600 hover:text-fk-red transition-colors text-sm font-medium">Contact</a></li>
             </ul>
           </div>
@@ -66,11 +66,11 @@ export function Footer() {
             <ul className="flex flex-col gap-4">
               <li className="flex items-start gap-3 text-sm text-gray-600">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-fk-red mt-0.5 flex-shrink-0"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/></svg>
-                <span>Mumbai, Maharashtra, India</span>
+                <span>New Delhi, India</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-gray-600">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-fk-red flex-shrink-0"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg>
-                <a href="mailto:contact@famekeeda.com" className="hover:text-fk-red transition-colors">contact@famekeeda.com</a>
+                <a href="mailto:contact@collabio.co.in" className="hover:text-fk-red transition-colors">contact@collabio.co.in</a>
               </li>
               <li className="flex items-center gap-3 text-sm text-gray-600">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-fk-red flex-shrink-0"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/></svg>
@@ -83,7 +83,7 @@ export function Footer() {
 
         {/* Bottom Copyright */}
         <div className="pt-8 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
-          <p>© {new Date().getFullYear()} Fame Keeda Networks. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Collabio. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="/privacy-policy" className="hover:text-fk-red transition-colors">Privacy Policy</a>
             <a href="/terms-conditions" className="hover:text-fk-red transition-colors">Terms of Service</a>
