@@ -5,7 +5,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", "Plus Jakarta Sans Fallback", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -45,24 +45,22 @@
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
   
-  --color-fk-primary: #BE1622;
-  --color-fk-secondary: #1A1A1A;
-  --color-fk-accent: #E84E1B;
-  --color-fk-background: #ffffff;
-  --color-fk-surface: #f9f9f9;
-  --color-fk-border: #eeeeee;
-  --color-fk-text: #1A1A1A;
-  --color-fk-muted: #666666;
-  
-  --color-fk-red: var(--fk-red);
-  --color-fk-orange: var(--fk-orange);
-  --color-fk-dark: var(--fk-dark);
-  --color-fk-charcoal: var(--fk-charcoal);
-  --color-fk-light-grey: var(--fk-light-grey);
-  --color-fk-border-grey: var(--fk-border-grey);
-  --color-fk-text-grey: var(--fk-text-grey);
-  
-  --background-image-fk-gradient: linear-gradient(90deg, #BE1622 0%, #E84E1B 50%, #BE1622 100%);
+  /* === COLLABIO Brand Tokens (Tailwind mappings) === */
+  --color-cb-blue: var(--cb-blue);
+  --color-cb-blue-dark: var(--cb-blue-dark);
+  --color-cb-cyan: var(--cb-cyan);
+  --color-cb-yellow: var(--cb-yellow);
+  --color-cb-yellow-light: var(--cb-yellow-light);
+  --color-cb-navy: var(--cb-navy);
+  --color-cb-black: var(--cb-black);
+  --color-cb-surface: var(--cb-surface);
+  --color-cb-surface-warm: var(--cb-surface-warm);
+  --color-cb-text: var(--cb-text);
+  --color-cb-text-secondary: var(--cb-text-secondary);
+  --color-cb-border: var(--cb-border);
+  --color-cb-muted: var(--cb-muted);
+
+  --background-image-cb-gradient: linear-gradient(135deg, #24529B 0%, #159BD3 100%);
 }
 
 :root {
@@ -146,20 +144,26 @@
   }
 }
 
-/* === Fame Keeda Site Tokens === */
+/* === COLLABIO Brand Tokens === */
 :root {
-  --fk-red: #BE1622;
-  --fk-orange: #E84E1B;
-  --fk-dark: #1A1A1A;
-  --fk-charcoal: #2A2A2A;
-  --fk-light-grey: #F5F5F5;
-  --fk-border-grey: #D9DBE9;
-  --fk-text-grey: #777777;
-  --fk-gradient: linear-gradient(90deg, #BE1622 0%, #E84E1B 50%, #BE1622 100%);
+  --cb-blue: #24529B;
+  --cb-blue-dark: #1769AA;
+  --cb-cyan: #159BD3;
+  --cb-yellow: #FFC83D;
+  --cb-yellow-light: #FFD447;
+  --cb-navy: #10264A;
+  --cb-black: #080A0D;
+  --cb-surface: #F8FAFC;
+  --cb-surface-warm: #FFFBEF;
+  --cb-border: rgba(10, 30, 60, 0.08);
+  --cb-text: #080A0D;
+  --cb-text-secondary: #5A6577;
+  --cb-muted: #6B7A8D;
+  --cb-gradient: linear-gradient(135deg, #24529B 0%, #159BD3 100%);
 }
 
 /* === Logo Carousel Infinite Scroll === */
-@keyframes fk-scroll-left {
+@keyframes cb-scroll-left {
   0% {
     transform: translateX(0);
   }
@@ -169,7 +173,7 @@
 }
 
 /* === Smooth fade-in for sections === */
-@keyframes fk-fade-up {
+@keyframes cb-fade-up {
   from {
     opacity: 0;
     transform: translateY(24px);

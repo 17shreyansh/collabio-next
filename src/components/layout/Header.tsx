@@ -55,16 +55,16 @@ export function Header() {
   const { header } = navigationConfig;
 
   return (
-    <header className="fk-navbar">
-      <div className="fk-nav-container">
+    <header className="cb-navbar">
+      <div className="cb-nav-container">
         {/* Mobile: Hamburger + Logo */}
-        <div className="fk-nav-left">
-          <button onClick={toggleMobile} aria-label="Toggle menu" className="fk-hamburger">
-            <span className={`fk-bar ${mobileOpen ? "fk-bar-1-open" : ""}`} />
-            <span className={`fk-bar ${mobileOpen ? "fk-bar-2-open" : ""}`} />
-            <span className={`fk-bar ${mobileOpen ? "fk-bar-3-open" : ""}`} />
+        <div className="cb-nav-left">
+          <button onClick={toggleMobile} aria-label="Toggle menu" className="cb-hamburger">
+            <span className={`cb-bar ${mobileOpen ? "cb-bar-1-open" : ""}`} />
+            <span className={`cb-bar ${mobileOpen ? "cb-bar-2-open" : ""}`} />
+            <span className={`cb-bar ${mobileOpen ? "cb-bar-3-open" : ""}`} />
           </button>
-          <Link href="/" className="fk-logo-link">
+          <Link href="/" className="cb-logo-link">
             <Image
               src="/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/images/fame-keeda-logo.svg"
               alt={siteConfig.name}
@@ -76,49 +76,49 @@ export function Header() {
         </div>
 
         {/* Mobile CTA */}
-        <button onClick={openContactModal} className="fk-mobile-cta">
-          Contact us
+        <button onClick={openContactModal} className="cb-mobile-cta">
+          Start a Campaign
         </button>
 
         {/* Desktop Nav */}
-        <nav className="fk-desktop-nav">
+        <nav className="cb-desktop-nav">
           {header.main.map((link) => (
-            <Link key={link.label} href={link.href} className="fk-nav-link">{link.label}</Link>
+            <Link key={link.label} href={link.href} className="cb-nav-link">{link.label}</Link>
           ))}
 
           {/* ─── Services Mega Menu ─── */}
           <div
-            className="fk-dropdown-wrapper"
+            className="cb-dropdown-wrapper"
             onMouseEnter={handleServicesEnter}
             onMouseLeave={handleServicesLeave}
           >
-            <button className="fk-nav-link fk-dropdown-btn">
+            <button className="cb-nav-link cb-dropdown-btn">
               {header.services.label} <ChevronSvg />
             </button>
-            <div className={`fk-mega-menu fk-services-menu ${servicesOpen ? "fk-mega-open" : ""}`}>
-              <div className="fk-mega-col">
+            <div className={`cb-mega-menu cb-services-menu ${servicesOpen ? "cb-mega-open" : ""}`}>
+              <div className="cb-mega-col">
                 {header.services.featured.map((s) => (
-                  <Link key={s.name} href={s.href} className="fk-mega-card fk-mega-featured">
-                    <span className="fk-mega-card-text">{s.name}</span>
+                  <Link key={s.name} href={s.href} className="cb-mega-card cb-mega-featured">
+                    <span className="cb-mega-card-text">{s.name}</span>
                     <DiagonalArrowSvg />
-                    <div className="fk-mega-card-img">
+                    <div className="cb-mega-card-img">
                       <Image src={s.img} alt={s.name} width={120} height={80} style={{ objectFit: "cover", borderRadius: 8 }} />
                     </div>
                   </Link>
                 ))}
               </div>
-              <div className="fk-mega-col">
+              <div className="cb-mega-col">
                 {header.services.col2.map((s) => (
-                  <Link key={s.name} href={s.href} className="fk-mega-card fk-mega-text-only">
-                    <span className="fk-mega-card-text">{s.name}</span>
+                  <Link key={s.name} href={s.href} className="cb-mega-card cb-mega-text-only">
+                    <span className="cb-mega-card-text">{s.name}</span>
                     <DiagonalArrowSvg grey />
                   </Link>
                 ))}
               </div>
-              <div className="fk-mega-col">
+              <div className="cb-mega-col">
                 {header.services.col3.map((s) => (
-                  <Link key={s.name} href={s.href} className="fk-mega-card fk-mega-text-only">
-                    <span className="fk-mega-card-text">{s.name}</span>
+                  <Link key={s.name} href={s.href} className="cb-mega-card cb-mega-text-only">
+                    <span className="cb-mega-card-text">{s.name}</span>
                     <DiagonalArrowSvg grey />
                   </Link>
                 ))}
@@ -128,32 +128,32 @@ export function Header() {
 
           {/* ─── Platforms Mega Menu ─── */}
           <div
-            className="fk-dropdown-wrapper"
+            className="cb-dropdown-wrapper"
             onMouseEnter={handlePlatformsEnter}
             onMouseLeave={handlePlatformsLeave}
           >
-            <button className="fk-nav-link fk-dropdown-btn">
+            <button className="cb-nav-link cb-dropdown-btn">
               {header.platforms.label} <ChevronSvg />
             </button>
-            <div className={`fk-mega-menu fk-platforms-menu ${platformsOpen ? "fk-mega-open" : ""}`}>
-              <div className="fk-mega-col">
+            <div className={`cb-mega-menu cb-platforms-menu ${platformsOpen ? "cb-mega-open" : ""}`}>
+              <div className="cb-mega-col">
                 {header.platforms.featured.map((p) => (
                   <Link
                     key={p.name}
                     href={p.href}
-                    className="fk-mega-card fk-platform-featured"
+                    className="cb-mega-card cb-platform-featured"
                     style={{ background: p.gradient }}
                   >
-                    <span className="fk-mega-card-text" style={{ color: "#fff" }}>{p.name}</span>
-                    <Image src={p.icon} alt={p.name} width={24} height={24} className="fk-platform-icon" />
+                    <span className="cb-mega-card-text" style={{ color: "#fff" }}>{p.name}</span>
+                    <Image src={p.icon} alt={p.name} width={24} height={24} className="cb-platform-icon" />
                   </Link>
                 ))}
               </div>
-              <div className="fk-mega-col">
+              <div className="cb-mega-col">
                 {header.platforms.col2.map((p) => (
-                  <Link key={p.name} href={p.href} className="fk-mega-card fk-mega-text-only fk-platform-small">
-                    <span className="fk-mega-card-text">{p.name}</span>
-                    <Image src={p.icon} alt={p.name} width={18} height={18} className="fk-platform-icon-sm" />
+                  <Link key={p.name} href={p.href} className="cb-mega-card cb-mega-text-only cb-platform-small">
+                    <span className="cb-mega-card-text">{p.name}</span>
+                    <Image src={p.icon} alt={p.name} width={18} height={18} className="cb-platform-icon-sm" />
                   </Link>
                 ))}
               </div>
@@ -162,28 +162,28 @@ export function Header() {
 
 
 
-          <button onClick={openContactModal} className="fk-contact-btn">
-            Contact us
+          <button onClick={openContactModal} className="cb-contact-btn">
+            Start a Campaign
           </button>
         </nav>
       </div>
 
       {/* ─── Mobile Menu ─── */}
-      <div className={`fk-mobile-menu ${mobileOpen ? "fk-mobile-open" : ""}`}>
+      <div className={`cb-mobile-menu ${mobileOpen ? "cb-mobile-open" : ""}`}>
         {header.main.map((link) => (
-          <Link key={link.label} href={link.href} className="fk-mobile-link" onClick={() => setMobileOpen(false)}>{link.label}</Link>
+          <Link key={link.label} href={link.href} className="cb-mobile-link" onClick={() => setMobileOpen(false)}>{link.label}</Link>
         ))}
 
         <div>
-          <button onClick={() => setMobileServicesOpen((p) => !p)} className="fk-mobile-link fk-mobile-dropdown-btn">
+          <button onClick={() => setMobileServicesOpen((p) => !p)} className="cb-mobile-link cb-mobile-dropdown-btn">
             {header.services.label}
             <span style={{ transform: mobileServicesOpen ? "rotate(180deg)" : "none", transition: "transform 0.2s", display: "inline-flex" }}>
               <ChevronSvg />
             </span>
           </button>
-          <div className={`fk-mobile-sub ${mobileServicesOpen ? "fk-mobile-sub-open" : ""}`}>
+          <div className={`cb-mobile-sub ${mobileServicesOpen ? "cb-mobile-sub-open" : ""}`}>
             {[...header.services.featured, ...header.services.col2, ...header.services.col3].map((s) => (
-              <Link key={s.name} href={s.href} className="fk-mobile-sub-link" onClick={() => setMobileOpen(false)}>
+              <Link key={s.name} href={s.href} className="cb-mobile-sub-link" onClick={() => setMobileOpen(false)}>
                 {s.name}
               </Link>
             ))}
@@ -191,15 +191,15 @@ export function Header() {
         </div>
 
         <div>
-          <button onClick={() => setMobilePlatformsOpen((p) => !p)} className="fk-mobile-link fk-mobile-dropdown-btn">
+          <button onClick={() => setMobilePlatformsOpen((p) => !p)} className="cb-mobile-link cb-mobile-dropdown-btn">
             {header.platforms.label}
             <span style={{ transform: mobilePlatformsOpen ? "rotate(180deg)" : "none", transition: "transform 0.2s", display: "inline-flex" }}>
               <ChevronSvg />
             </span>
           </button>
-          <div className={`fk-mobile-sub ${mobilePlatformsOpen ? "fk-mobile-sub-open" : ""}`}>
+          <div className={`cb-mobile-sub ${mobilePlatformsOpen ? "cb-mobile-sub-open" : ""}`}>
             {[...header.platforms.featured, ...header.platforms.col2].map((p) => (
-              <Link key={p.name} href={p.href} className="fk-mobile-sub-link" onClick={() => setMobileOpen(false)}>
+              <Link key={p.name} href={p.href} className="cb-mobile-sub-link" onClick={() => setMobileOpen(false)}>
                 <Image src={p.icon} alt="" width={16} height={16} />
                 {p.name}
               </Link>
@@ -211,7 +211,7 @@ export function Header() {
       </div>
       <style>{`
         /* ─── Base ─── */
-        .fk-navbar {
+        .cb-navbar {
           position: fixed;
           top: 0;
           left: 0;
@@ -219,9 +219,9 @@ export function Header() {
           z-index: 1000;
           background: rgba(255, 255, 255, 0.97);
           backdrop-filter: blur(8px);
-          border-bottom: 1px solid #eee;
+          border-bottom: 1px solid rgba(10, 30, 60, 0.08);
         }
-        .fk-nav-container {
+        .cb-nav-container {
           max-width: 1400px;
           margin: 0 auto;
           padding: 12px 24px;
@@ -229,19 +229,19 @@ export function Header() {
           align-items: center;
           justify-content: space-between;
         }
-        .fk-nav-left {
+        .cb-nav-left {
           display: flex;
           align-items: center;
           gap: 16px;
         }
-        .fk-logo-link {
+        .cb-logo-link {
           display: flex;
           align-items: center;
           text-decoration: none;
         }
 
         /* ─── Hamburger ─── */
-        .fk-hamburger {
+        .cb-hamburger {
           display: none;
           flex-direction: column;
           gap: 5px;
@@ -250,26 +250,26 @@ export function Header() {
           cursor: pointer;
           padding: 4px;
         }
-        .fk-bar {
+        .cb-bar {
           width: 22px;
           height: 2px;
-          background: #1A1A1A;
+          background: #080A0D;
           border-radius: 2px;
           transition: all 0.3s;
         }
-        .fk-bar-1-open { transform: rotate(45deg) translate(5px, 5px); }
-        .fk-bar-2-open { opacity: 0; }
-        .fk-bar-3-open { transform: rotate(-45deg) translate(5px, -5px); }
+        .cb-bar-1-open { transform: rotate(45deg) translate(5px, 5px); }
+        .cb-bar-2-open { opacity: 0; }
+        .cb-bar-3-open { transform: rotate(-45deg) translate(5px, -5px); }
 
         /* ─── Desktop Nav ─── */
-        .fk-desktop-nav {
+        .cb-desktop-nav {
           display: flex;
           align-items: center;
           gap: 32px;
         }
-        .fk-nav-link {
+        .cb-nav-link {
           text-decoration: none;
-          color: #1A1A1A;
+          color: #080A0D;
           font-size: 14px;
           font-weight: 500;
           background: none;
@@ -277,53 +277,54 @@ export function Header() {
           cursor: pointer;
           font-family: inherit;
           padding: 0;
+          transition: color 0.2s;
         }
-        .fk-nav-link:hover { color: #BE1622; }
-        .fk-dropdown-btn {
+        .cb-nav-link:hover { color: #24529B; }
+        .cb-dropdown-btn {
           display: flex;
           align-items: center;
           gap: 4px;
         }
-        .fk-contact-btn {
-          background: #1A1A1A;
+        .cb-contact-btn {
+          background: #24529B;
           color: #fff;
           border: none;
           border-radius: 100px;
           padding: 10px 24px;
           font-size: 14px;
-          font-weight: 500;
+          font-weight: 600;
           cursor: pointer;
-          transition: background 0.2s;
+          transition: all 0.2s;
           font-family: inherit;
         }
-        .fk-contact-btn:hover { background: #333; }
-        .fk-mobile-cta {
+        .cb-contact-btn:hover { background: #10264A; transform: translateY(-1px); }
+        .cb-mobile-cta {
           display: none;
-          background: #1A1A1A;
+          background: #24529B;
           color: #fff;
           border: none;
           border-radius: 100px;
           padding: 8px 16px;
           font-size: 13px;
-          font-weight: 500;
+          font-weight: 600;
           cursor: pointer;
           font-family: inherit;
         }
 
         /* ─── Dropdown Wrapper ─── */
-        .fk-dropdown-wrapper {
+        .cb-dropdown-wrapper {
           position: relative;
         }
 
         /* ─── Mega Menu ─── */
-        .fk-mega-menu {
+        .cb-mega-menu {
           position: absolute;
           top: calc(100% + 8px);
           left: 50%;
           transform: translateX(-50%);
           background: #fff;
           border-radius: 16px;
-          box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 8px 40px rgba(10, 30, 60, 0.12);
           padding: 12px;
           display: none;
           gap: 8px;
@@ -331,20 +332,20 @@ export function Header() {
           pointer-events: none;
           transition: opacity 0.2s;
         }
-        .fk-mega-open {
+        .cb-mega-open {
           display: flex;
           opacity: 1;
           pointer-events: auto;
         }
-        .fk-services-menu {
+        .cb-services-menu {
           min-width: 620px;
         }
-        .fk-platforms-menu {
+        .cb-platforms-menu {
           min-width: 380px;
         }
 
         /* ─── Mega Columns ─── */
-        .fk-mega-col {
+        .cb-mega-col {
           display: flex;
           flex-direction: column;
           gap: 4px;
@@ -352,42 +353,42 @@ export function Header() {
         }
 
         /* ─── Mega Cards ─── */
-        .fk-mega-card {
+        .cb-mega-card {
           display: flex;
           align-items: center;
           justify-content: space-between;
           padding: 10px 14px;
           border-radius: 12px;
           text-decoration: none;
-          color: #1A1A1A;
+          color: #080A0D;
           font-size: 13px;
           font-weight: 500;
           transition: background 0.2s;
           gap: 8px;
         }
-        .fk-mega-card:hover {
-          background: #f5f5f5;
+        .cb-mega-card:hover {
+          background: #F8FAFC;
         }
-        .fk-mega-card-text {
+        .cb-mega-card-text {
           white-space: nowrap;
         }
 
         /* Featured service cards with image */
-        .fk-mega-featured {
+        .cb-mega-featured {
           flex-direction: column;
           align-items: flex-start;
           padding: 14px;
-          background: #f9f9f9;
+          background: #F8FAFC;
           border-radius: 14px;
           gap: 8px;
           min-height: 100px;
           position: relative;
           overflow: hidden;
         }
-        .fk-mega-featured:hover {
-          background: #f0f0f0;
+        .cb-mega-featured:hover {
+          background: #EFF3F8;
         }
-        .fk-mega-card-img {
+        .cb-mega-card-img {
           position: absolute;
           bottom: 8px;
           right: 8px;
@@ -397,30 +398,30 @@ export function Header() {
         }
 
         /* Platform featured cards */
-        .fk-platform-featured {
+        .cb-platform-featured {
           border-radius: 14px;
           padding: 16px;
           min-height: 60px;
         }
-        .fk-platform-featured:hover {
+        .cb-platform-featured:hover {
           filter: brightness(1.05);
           background: inherit !important;
         }
-        .fk-platform-icon {
+        .cb-platform-icon {
           filter: brightness(0) invert(1);
         }
 
         /* Small platform cards */
-        .fk-platform-small {
-          border: 1px solid #eee;
+        .cb-platform-small {
+          border: 1px solid rgba(10, 30, 60, 0.08);
           border-radius: 10px;
         }
-        .fk-platform-small:hover {
-          border-color: #ddd;
+        .cb-platform-small:hover {
+          border-color: rgba(10, 30, 60, 0.15);
         }
 
         /* ─── Mobile Menu ─── */
-        .fk-mobile-menu {
+        .cb-mobile-menu {
           display: none;
           position: fixed;
           top: 60px;
@@ -434,16 +435,16 @@ export function Header() {
           gap: 4px;
           overflow-y: auto;
         }
-        .fk-mobile-open {
+        .cb-mobile-open {
           display: flex;
         }
-        .fk-mobile-link {
+        .cb-mobile-link {
           font-size: 16px;
           font-weight: 500;
-          color: #1A1A1A;
+          color: #080A0D;
           text-decoration: none;
           padding: 12px 0;
-          border-bottom: 1px solid #f0f0f0;
+          border-bottom: 1px solid rgba(10, 30, 60, 0.06);
           display: block;
           background: none;
           border-top: none;
@@ -454,36 +455,36 @@ export function Header() {
           text-align: left;
           width: 100%;
         }
-        .fk-mobile-dropdown-btn {
+        .cb-mobile-dropdown-btn {
           display: flex;
           align-items: center;
           justify-content: space-between;
         }
-        .fk-mobile-sub {
+        .cb-mobile-sub {
           max-height: 0;
           overflow: hidden;
           transition: max-height 0.3s ease;
           padding-left: 16px;
         }
-        .fk-mobile-sub-open {
+        .cb-mobile-sub-open {
           max-height: 600px;
         }
-        .fk-mobile-sub-link {
+        .cb-mobile-sub-link {
           display: flex;
           align-items: center;
           gap: 8px;
           font-size: 14px;
-          color: #555;
+          color: #5A6577;
           text-decoration: none;
           padding: 8px 0;
         }
-        .fk-mobile-sub-link:hover { color: #BE1622; }
+        .cb-mobile-sub-link:hover { color: #24529B; }
 
         /* ─── Responsive ─── */
         @media (max-width: 768px) {
-          .fk-hamburger { display: flex; }
-          .fk-desktop-nav { display: none !important; }
-          .fk-mobile-cta { display: block; }
+          .cb-hamburger { display: flex; }
+          .cb-desktop-nav { display: none !important; }
+          .cb-mobile-cta { display: block; }
         }
       `}</style>
     </header>

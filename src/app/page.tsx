@@ -11,7 +11,7 @@ import { SuccessStories } from "@/components/sites/collabio-com-a1b2c3d4/root-e5
 import { FoundersSection } from "@/components/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/FoundersSection";
 import { CTABanner } from "@/components/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/CTABanner";
 
-export default function FameKeedaClone() {
+export default function CollabioHome() {
   const data = getPageContent("home");
   if (!data) return notFound();
 

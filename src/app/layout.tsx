@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { seoConfig } from "@/config/seo";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ContactModal } from "@/components/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/ContactModal";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -36,8 +36,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} antialiased`}>
-      <body className="min-h-full flex flex-col font-[var(--font-poppins)]">
+    <html lang="en" className={`${jakarta.variable} antialiased`}>
+      <body className="min-h-full flex flex-col font-[var(--font-jakarta)]">
         <Header />
         <div className="flex-1">
           {children}

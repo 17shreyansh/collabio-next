@@ -1,13 +1,14 @@
 export const themeConfig = {
   colors: {
-    primary: "var(--color-primary)",
-    secondary: "var(--color-secondary)",
-    accent: "var(--color-accent)",
-    background: "var(--color-background)",
-    surface: "var(--color-surface)",
-    text: "var(--color-text)",
-    muted: "var(--color-muted)",
-    border: "var(--color-border)",
+    primary: "var(--cb-blue)",
+    secondary: "var(--cb-navy)",
+    accent: "var(--cb-yellow)",
+    cyan: "var(--cb-cyan)",
+    background: "var(--cb-surface)",
+    surface: "var(--cb-surface)",
+    text: "var(--cb-text)",
+    muted: "var(--cb-muted)",
+    border: "var(--cb-border)",
   },
   animation: {
     duration: "300ms",
