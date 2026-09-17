@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
-const ASSET = "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8";
+const ASSET = "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8";
 
 const steps = [
   {
@@ -69,9 +69,11 @@ export function FiveStepBlueprint() {
   }, []);
 
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-24 bg-white relative">
       {/* Background Decorative Blur */}
-      <div className="absolute top-1/4 -left-64 w-96 h-96 bg-fk-red/5 rounded-full blur-[100px] pointer-events-none"></div>
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 -left-64 w-96 h-96 bg-fk-red/5 rounded-full blur-[100px]"></div>
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         

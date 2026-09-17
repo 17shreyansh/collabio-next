@@ -4,9 +4,9 @@ import { HowItWorks } from "../sections/HowItWorks";
 import { PlatformHero } from "../sections/PlatformHero";
 import { Benefits } from "../sections/Benefits";
 import { Formats } from "../sections/Formats";
-import { BrandLogosCarousel } from "../sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/BrandLogosCarousel";
-import { SuccessStories } from "../sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/SuccessStories";
-import { CTABanner } from "../sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/CTABanner";
+import { BrandLogosCarousel } from "../sites/collabio-com-a1b2c3d4/root-e5f6g7h8/BrandLogosCarousel";
+import { SuccessStories } from "../sites/collabio-com-a1b2c3d4/root-e5f6g7h8/SuccessStories";
+import { CTABanner } from "../sites/collabio-com-a1b2c3d4/root-e5f6g7h8/CTABanner";
 
 // We keep BrandLogosCarousel, SuccessStories, CTABanner from original for now until they are refactored
 // We assume data has specific structure to identify which template to use.

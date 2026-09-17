@@ -4,7 +4,7 @@ description: "Drive direct clicks, app installs, and high-conversion affiliate s
 hero:
   title: "Telegram <br />Influencer Marketing"
   desc: "Drive direct clicks, app installs, and high-conversion affiliate sales through highly engaged private broadcast channels."
-  image: "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/platforms/telegram_hero.jpg"
+  image: "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/platforms/telegram_hero.jpg"
 benefits:
   title: "Why Telegram?"
   desc: "Telegram offers a direct line to consumers with incredibly high open rates and immediate click-throughs."

@@ -1,6 +1,6 @@
 import { siteConfig } from "./site";
 
-const ASSET = "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8";
+const ASSET = "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8";
 
 export const navigationConfig = {
   header: {

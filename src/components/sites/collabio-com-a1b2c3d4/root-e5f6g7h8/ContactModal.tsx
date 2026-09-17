@@ -13,8 +13,8 @@ export function ContactModal() {
       setIsOpen(true);
       setStep(1);
     };
-    document.addEventListener("open-contact-modal", handleOpen);
-    return () => document.removeEventListener("open-contact-modal", handleOpen);
+    window.addEventListener("open-contact-modal", handleOpen);
+    return () => window.removeEventListener("open-contact-modal", handleOpen as EventListener);
   }, []);
 
   if (!isOpen) return null;
@@ -38,7 +38,7 @@ export function ContactModal() {
         {/* Left Side - Video/Image */}
         <div className="hidden md:block w-2/5 bg-fk-charcoal relative">
           <img 
-            src="/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/images/agency-group-3.webp" 
+            src="/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/images/agency-group-3.webp" 
             alt="Contact"
             className="w-full h-full object-cover opacity-80"
           />

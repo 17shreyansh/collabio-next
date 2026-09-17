@@ -4,7 +4,7 @@ description: "Scale your influencer marketing efficiently through mutually benef
 hero:
   title: "Barter <br /><span>Campaigns</span>"
   desc: "Scale your influencer marketing efficiently through mutually beneficial product-for-post collaborations."
-  image: "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/services/hero-barter.webp"
+  image: "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/services/hero-barter.webp"
 offerings:
   title: "What We <span>Offer</span>"
   desc: "Cost-effective campaigns that generate high-volume content and widespread brand awareness."

@@ -4,7 +4,7 @@ description: "Reach decision-makers, industry professionals, and B2B buyers thro
 hero:
   title: "LinkedIn <br />Influencer Marketing"
   desc: "Reach decision-makers, industry professionals, and B2B buyers through thought leadership and professional networking."
-  image: "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/platforms/linkedin_hero.jpg"
+  image: "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/platforms/linkedin_hero.jpg"
 benefits:
   title: "Why LinkedIn?"
   desc: "LinkedIn is the premier platform for B2B marketing, employer branding, and reaching high-net-worth professionals."

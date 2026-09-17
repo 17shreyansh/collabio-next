@@ -4,7 +4,7 @@ description: "Go viral and connect with Gen Z and Millennials through culturally
 hero:
   title: "Meme <br /><span>Marketing</span>"
   desc: "Go viral and connect with Gen Z and Millennials through culturally relevant, highly shareable meme campaigns."
-  image: "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/services/hero-meme.webp"
+  image: "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/services/hero-meme.webp"
 offerings:
   title: "What We <span>Offer</span>"
   desc: "Strategic meme creation and distribution that inserts your brand into the cultural zeitgeist."

@@ -19,7 +19,7 @@ export function Footer() {
             <div className="mb-6">
               <Link href="/">
                 <Image 
-                  src="/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/images/fame-keeda-logo.svg"
+                  src="/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/images/fame-keeda-logo.svg"
                   alt={siteConfig.name}
                   width={160}
                   height={40}

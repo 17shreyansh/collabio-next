@@ -4,7 +4,7 @@ description: "Elevate your brand's prestige and reach millions instantly by part
 hero:
   title: "Celebrity <br /><span>Endorsements</span>"
   desc: "Elevate your brand's prestige and reach millions instantly by partnering with top-tier celebrities and industry icons."
-  image: "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/services/hero-celebrity.webp"
+  image: "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/services/hero-celebrity.webp"
 offerings:
   title: "What We <span>Offer</span>"
   desc: "End-to-end celebrity acquisition and campaign management for maximum impact."

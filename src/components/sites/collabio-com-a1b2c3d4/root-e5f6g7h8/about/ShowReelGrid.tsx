@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 
-const ASSET = "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/showreel";
+const ASSET = "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/showreel";
 
 interface VideoPlayerProps {
   poster: string;

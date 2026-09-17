@@ -4,7 +4,7 @@ description: "Engage, educate, and convert your audience with compelling, strate
 hero:
   title: "Content <br /><span>Marketing Agency</span>"
   desc: "Engage, educate, and convert your audience with compelling, strategy-driven content marketing campaigns."
-  image: "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/services/hero-content.webp"
+  image: "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/services/hero-content.webp"
 offerings:
   title: "What We <span>Offer</span>"
   desc: "End-to-end content solutions that build brand authority and foster long-term customer relationships."

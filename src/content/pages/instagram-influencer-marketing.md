@@ -4,7 +4,7 @@ description: "Tap into visual storytelling, viral Reels, and high-converting Sto
 hero:
   title: "Instagram <br /><span>Influencer Marketing</span>"
   desc: "Tap into visual storytelling, viral Reels, and high-converting Stories with Instagram's highly engaged audience."
-  image: "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/platforms/instagram_hero.jpg"
+  image: "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/platforms/instagram_hero.jpg"
 benefits:
   title: "Why <span>Instagram?</span>"
   desc: "Instagram provides the perfect mix of visual appeal, engaging formats, and direct conversion tools for modern brands."

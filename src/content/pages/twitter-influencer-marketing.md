@@ -4,7 +4,7 @@ description: "Spark conversations, trend globally, and engage with crypto, tech,
 hero:
   title: "Twitter (X) <br />Influencer Marketing"
   desc: "Spark conversations, trend globally, and engage with crypto, tech, and news-focused audiences in real-time."
-  image: "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/platforms/twitter_hero.jpg"
+  image: "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/platforms/twitter_hero.jpg"
 benefits:
   title: "Why Twitter (X)?"
   desc: "Twitter is the pulse of the internet, making it perfect for rapid awareness, product launches, and community building."

@@ -4,7 +4,7 @@ import "./globals.css";
 import { seoConfig } from "@/config/seo";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { ContactModal } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/ContactModal";
+import { ContactModal } from "@/components/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/ContactModal";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     images: seoConfig.openGraph.images.map(img => img.url),
   },
   icons: {
-    icon: "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/seo/favicon.webp",
+    icon: "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/seo/favicon.webp",
   },
 };
 

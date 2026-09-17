@@ -4,7 +4,7 @@ description: "Seamlessly integrate your brand into engaging creator content to d
 hero:
   title: "Brand <br /><span>Integration Agency</span>"
   desc: "Seamlessly integrate your brand into engaging creator content to drive authentic awareness and engagement."
-  image: "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/services/hero-brand.webp"
+  image: "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/services/hero-brand.webp"
 offerings:
   title: "What We <span>Offer</span>"
   desc: "We embed your brand naturally into content that audiences already love and consume daily."

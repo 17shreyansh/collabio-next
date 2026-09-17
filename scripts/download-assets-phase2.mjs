@@ -8,7 +8,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const BASE = path.resolve(__dirname, "..", "public", "sites", "famekeeda-com-a1b2c3d4", "root-e5f6g7h8");
+const BASE = path.resolve(__dirname, "..", "public", "sites", "collabio-com-a1b2c3d4", "root-e5f6g7h8");
 
 const ASSETS = [
   // About Us - Story Cards

@@ -4,7 +4,7 @@ description: "Drive deep engagement, detailed product education, and long-term S
 hero:
   title: "YouTube <br />Influencer Marketing"
   desc: "Drive deep engagement, detailed product education, and long-term SEO value with the world's largest video platform."
-  image: "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/platforms/youtube_hero.jpg"
+  image: "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/platforms/youtube_hero.jpg"
 benefits:
   title: "Why YouTube?"
   desc: "YouTube offers unmatched depth of content, allowing creators to fully explain and demonstrate your product's value proposition."

@@ -4,7 +4,7 @@ description: "Harness the power of everyday consumers to create authentic, highl
 hero:
   title: "User Generated <br /><span>Content (UGC)</span>"
   desc: "Harness the power of everyday consumers to create authentic, highly converting content for your brand."
-  image: "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/services/hero-ugc.webp"
+  image: "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/services/hero-ugc.webp"
 offerings:
   title: "What We <span>Offer</span>"
   desc: "Scalable UGC campaigns that build trust and provide a steady stream of relatable ad creatives."

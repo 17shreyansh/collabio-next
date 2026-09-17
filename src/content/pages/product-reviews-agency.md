@@ -4,7 +4,7 @@ description: "Drive trust and sales with authentic product reviews from creators
 hero:
   title: "Product <br /><span>Reviews Agency</span>"
   desc: "Drive trust and sales with authentic product reviews from creators, influencers, and consumers across India."
-  image: "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/services/hero-product.webp"
+  image: "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/services/hero-product.webp"
 offerings:
   title: "What We <span>Offer</span>"
   desc: "Elevate your brand's credibility with genuine reviews that resonate with your target audience."

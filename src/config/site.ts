@@ -4,8 +4,8 @@ export const siteConfig = {
   tagline: "Influencer & AI Marketing Agency",
   description: "Collabio is a full-service influencer marketing agency that helps brands connect with the right audiences through authentic creator collaborations.",
   url: "https://collabio.co.in", // Assuming based on previous browser state
-  ogImage: "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/seo/og-image.png",
-  favicon: "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/seo/favicon.webp",
+  ogImage: "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/seo/og-image.png",
+  favicon: "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/seo/favicon.webp",
   contact: {
     email: "contact@collabio.co.in",
     phone: "+91 98765 43210", // Placeholder if we don't know the exact one, but the site probably has one.

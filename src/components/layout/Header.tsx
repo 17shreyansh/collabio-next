@@ -66,7 +66,7 @@ export function Header() {
           </button>
           <Link href="/" className="fk-logo-link">
             <Image
-              src="/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/images/fame-keeda-logo.svg"
+              src="/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/images/fame-keeda-logo.svg"
               alt={siteConfig.name}
               width={140}
               height={36}
@@ -160,9 +160,7 @@ export function Header() {
             </div>
           </div>
 
-          <a href="https://www.famekeeda.com/blogs/" target="_blank" rel="noopener noreferrer" className="fk-nav-link">
-            Blogs
-          </a>
+
 
           <button onClick={openContactModal} className="fk-contact-btn">
             Contact us
@@ -209,9 +207,7 @@ export function Header() {
           </div>
         </div>
 
-        <a href="https://www.famekeeda.com/blogs/" target="_blank" rel="noopener noreferrer" className="fk-mobile-link" onClick={() => setMobileOpen(false)}>
-          Blogs
-        </a>
+
       </div>
       <style>{`
         /* ─── Base ─── */

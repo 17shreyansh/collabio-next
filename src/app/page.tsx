@@ -1,15 +1,15 @@
 import { getPageContent } from "@/lib/content";
 import { notFound } from "next/navigation";
-import { HeroSection } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/HeroSection";
-import { SocialProofStats } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/SocialProofStats";
-import { BrandLogosCarousel } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/BrandLogosCarousel";
-import { InfluencerAgencyShowcase } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/InfluencerAgencyShowcase";
-import { ServicesGrid } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/ServicesGrid";
-import { FiveStepBlueprint } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/FiveStepBlueprint";
-import { PlatformsSection } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/PlatformsSection";
-import { SuccessStories } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/SuccessStories";
-import { FoundersSection } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/FoundersSection";
-import { CTABanner } from "@/components/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/CTABanner";
+import { HeroSection } from "@/components/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/HeroSection";
+import { SocialProofStats } from "@/components/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/SocialProofStats";
+import { BrandLogosCarousel } from "@/components/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/BrandLogosCarousel";
+import { InfluencerAgencyShowcase } from "@/components/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/InfluencerAgencyShowcase";
+import { ServicesGrid } from "@/components/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/ServicesGrid";
+import { FiveStepBlueprint } from "@/components/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/FiveStepBlueprint";
+import { PlatformsSection } from "@/components/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/PlatformsSection";
+import { SuccessStories } from "@/components/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/SuccessStories";
+import { FoundersSection } from "@/components/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/FoundersSection";
+import { CTABanner } from "@/components/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/CTABanner";
 
 export default function FameKeedaClone() {
   const data = getPageContent("home");

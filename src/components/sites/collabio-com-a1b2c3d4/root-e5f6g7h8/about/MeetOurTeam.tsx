@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const ASSET = "/sites/famekeeda-com-a1b2c3d4/root-e5f6g7h8/about";
+const ASSET = "/sites/collabio-com-a1b2c3d4/root-e5f6g7h8/about";
 
 const teamMembers = [
   { name: "Reena Rose", role: "The One Who Handles Money,\nMandates, and Memes", image: `${ASSET}/reena_rose.webp` },
