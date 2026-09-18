@@ -5,7 +5,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "Plus Jakarta Sans", "Plus Jakarta Sans Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-sans:
+    "Plus Jakarta Sans", "Plus Jakarta Sans Fallback", ui-sans-serif, system-ui,
+    sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -44,7 +46,7 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
-  
+
   /* === COLLABIO Brand Tokens (Tailwind mappings) === */
   --color-cb-blue: var(--cb-blue);
   --color-cb-blue-dark: var(--cb-blue-dark);
@@ -60,7 +62,24 @@
   --color-cb-border: var(--cb-border);
   --color-cb-muted: var(--cb-muted);
 
-  --background-image-cb-gradient: linear-gradient(135deg, #24529B 0%, #159BD3 100%);
+  /* === Legacy/Template Tokens === */
+  --color-fk-dark: var(--fk-dark);
+  --color-fk-charcoal: var(--fk-charcoal);
+  --color-fk-red: var(--fk-red);
+  --color-fk-orange: var(--fk-orange);
+  --color-fk-text: var(--fk-text);
+  --color-fk-muted: var(--fk-muted);
+  --color-fk-accent: var(--fk-accent);
+  --color-fk-primary: var(--fk-primary);
+  --color-fk-border: var(--fk-border);
+  --color-fk-surface: var(--fk-surface);
+
+  --background-image-cb-gradient: linear-gradient(
+    135deg,
+    #24529b 0%,
+    #159bd3 100%
+  );
+  --background-image-fk-gradient: var(--fk-gradient);
 }
 
 :root {
@@ -146,20 +165,33 @@
 
 /* === COLLABIO Brand Tokens === */
 :root {
-  --cb-blue: #24529B;
-  --cb-blue-dark: #1769AA;
-  --cb-cyan: #159BD3;
-  --cb-yellow: #FFC83D;
-  --cb-yellow-light: #FFD447;
-  --cb-navy: #10264A;
-  --cb-black: #080A0D;
-  --cb-surface: #F8FAFC;
-  --cb-surface-warm: #FFFBEF;
+  --cb-blue: #24529b;
+  --cb-blue-dark: #1769aa;
+  --cb-cyan: #159bd3;
+  --cb-yellow: #ffc83d;
+  --cb-yellow-light: #ffd447;
+  --cb-navy: #10264a;
+  --cb-black: #080a0d;
+  --cb-surface: #f8fafc;
+  --cb-surface-warm: #fffbef;
   --cb-border: rgba(10, 30, 60, 0.08);
-  --cb-text: #080A0D;
-  --cb-text-secondary: #5A6577;
-  --cb-muted: #6B7A8D;
-  --cb-gradient: linear-gradient(135deg, #24529B 0%, #159BD3 100%);
+  --cb-text: #080a0d;
+  --cb-text-secondary: #5a6577;
+  --cb-muted: #6b7a8d;
+  --cb-gradient: linear-gradient(135deg, #24529b 0%, #159bd3 100%);
+
+  /* === Legacy/Template Tokens === */
+  --fk-dark: #10264a; /* cb-navy */
+  --fk-charcoal: #080a0d; /* cb-black */
+  --fk-red: #24529b; /* cb-blue */
+  --fk-orange: #159bd3; /* cb-cyan */
+  --fk-text: #080a0d; /* cb-text */
+  --fk-muted: #6b7a8d; /* cb-muted */
+  --fk-accent: #159bd3; /* cb-cyan */
+  --fk-primary: #24529b; /* cb-blue */
+  --fk-border: rgba(10, 30, 60, 0.08); /* cb-border */
+  --fk-surface: #f8fafc; /* cb-surface */
+  --fk-gradient: linear-gradient(135deg, #24529b 0%, #159bd3 100%);
 }
 
 /* === Logo Carousel Infinite Scroll === */
@@ -185,9 +217,15 @@
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 @layer utilities {

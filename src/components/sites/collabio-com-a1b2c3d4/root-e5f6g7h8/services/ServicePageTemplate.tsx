@@ -71,9 +71,9 @@ export function ServicePageTemplate({ hero, offerings, howItWorks }: ServicePage
             <div key={idx} className="fk-offering-card">
               <div className="fk-offering-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#BE1622" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M12 16V12" stroke="#BE1622" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M12 8H12.01" stroke="#BE1622" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#24529b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M12 16V12" stroke="#24529b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M12 8H12.01" stroke="#24529b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
               <h3 className="fk-offering-title">{card.title}</h3>
@@ -132,7 +132,7 @@ export function ServicePageTemplate({ hero, offerings, howItWorks }: ServicePage
           margin-bottom: 24px;
         }
         .fk-service-hero-title span {
-          background: var(--fk-gradient, linear-gradient(90deg, #BE1622, #E84E1B));
+          background: var(--fk-gradient, linear-gradient(90deg, #24529b, #159bd3));
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -144,7 +144,7 @@ export function ServicePageTemplate({ hero, offerings, howItWorks }: ServicePage
           margin-bottom: 32px;
         }
         .fk-service-hero-cta {
-          background: var(--fk-gradient, linear-gradient(90deg, #BE1622, #E84E1B));
+          background: var(--fk-gradient, linear-gradient(90deg, #24529b, #159bd3));
           color: white;
           border: none;
           padding: 14px 32px;
@@ -171,7 +171,7 @@ export function ServicePageTemplate({ hero, offerings, howItWorks }: ServicePage
           margin-bottom: 16px;
         }
         .fk-section-title span {
-          background: var(--fk-gradient, linear-gradient(90deg, #BE1622, #E84E1B));
+          background: var(--fk-gradient, linear-gradient(90deg, #24529b, #159bd3));
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;

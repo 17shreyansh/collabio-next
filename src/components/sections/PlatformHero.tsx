@@ -4,13 +4,16 @@ interface PlatformHeroProps {
   title: string;
   titleHighlight?: string;
   desc: string;
-  gradient: string;
+  gradient?: string;
   image: string;
 }
 
 export function PlatformHero({ title, titleHighlight, desc, gradient, image }: PlatformHeroProps) {
+  const bgStyle = gradient ? { background: gradient } : {};
+  const bgClass = !gradient ? "bg-fk-gradient" : "";
+
   return (
-    <section className="relative py-[140px] px-6 text-white pb-20 overflow-hidden" style={{ background: gradient }}>
+    <section className={`relative py-[140px] px-6 text-white pb-20 overflow-hidden ${bgClass}`} style={bgStyle}>
       {/* Animated Glowing Background Orbs */}
       <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] bg-white/20 blur-[120px] rounded-full animate-pulse pointer-events-none" />
       <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[60%] bg-white/20 blur-[120px] rounded-full animate-pulse pointer-events-none" style={{ animationDelay: '2s' }} />

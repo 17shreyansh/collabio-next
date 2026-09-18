@@ -34,8 +34,8 @@ export function Formats({ title, titleHighlight, desc, items }: FormatsProps) {
             
             <div className="relative z-10 flex-shrink-0 w-14 h-14 bg-fk-surface rounded-2xl flex items-center justify-center group-hover:bg-fk-primary/10 transition-colors duration-300">
               <svg className="transform group-hover:scale-110 transition-transform duration-300" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#BE1622" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M10 9L15 12L10 15V9Z" stroke="#BE1622" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#24529b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M10 9L15 12L10 15V9Z" stroke="#24529b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
             <div className="relative z-10">

@@ -27,9 +27,9 @@ export function Offerings({ title, titleHighlight, desc, cards }: OfferingsProps
           <div key={idx} className="bg-fk-surface rounded-2xl p-8 border border-fk-border hover:shadow-lg transition-shadow">
             <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-5 shadow-sm">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#BE1622" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M12 16V12" stroke="#BE1622" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M12 8H12.01" stroke="#BE1622" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#24529b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M12 16V12" stroke="#24529b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M12 8H12.01" stroke="#24529b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
             <h3 className="text-xl font-bold text-fk-text mb-3">{card.title}</h3>

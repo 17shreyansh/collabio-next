@@ -158,8 +158,10 @@ export function Navbar() {
             <Image
               src={`${ASSET}/images/fame-keeda-logo.svg`}
               alt="Collabio"
-              width={140}
-              height={36}
+              width={100}
+              height={28}
+              style={{ width: "auto", height: "28px", objectFit: "contain" }}
+              className="rounded-lg"
               priority
             />
           </Link>
@@ -395,7 +397,7 @@ export function Navbar() {
           font-family: inherit;
           padding: 0;
         }
-        .fk-nav-link:hover { color: #BE1622; }
+        .fk-nav-link:hover { color: #24529b; }
         .fk-dropdown-btn {
           display: flex;
           align-items: center;
@@ -594,7 +596,7 @@ export function Navbar() {
           text-decoration: none;
           padding: 8px 0;
         }
-        .fk-mobile-sub-link:hover { color: #BE1622; }
+        .fk-mobile-sub-link:hover { color: #24529b; }
 
         /* ─── Responsive ─── */
         @media (max-width: 768px) {

@@ -15,8 +15,10 @@ export function Footer() {
               <Image 
                 src={`${ASSET}/images/fame-keeda-logo.svg`}
                 alt="Collabio Logo"
-                width={160}
-                height={40}
+                width={120}
+                height={32}
+                style={{ width: "auto", height: "32px", objectFit: "contain" }}
+                className="rounded-lg"
               />
             </div>
             <p className="text-gray-600 text-sm leading-relaxed mb-6">

@@ -68,8 +68,9 @@ export function Header() {
             <Image
               src="/logo.png"
               alt={siteConfig.name}
-              width={80}
-              height={80}
+              width={48}
+              height={48}
+              className="rounded-xl"
               priority
             />
           </Link>
