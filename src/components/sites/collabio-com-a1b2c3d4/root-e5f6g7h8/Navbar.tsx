@@ -194,7 +194,7 @@ export function Navbar() {
                     <span className="fk-mega-card-text">{s.name}</span>
                     <DiagonalArrowSvg />
                     <div className="fk-mega-card-img">
-                      <Image src={s.img} alt={s.name} width={120} height={80} style={{ objectFit: "cover", borderRadius: 8 }} />
+                      <Image src={s.img} alt={s.name} width={120} height={80} style={{ objectFit: "cover", borderRadius: 8, width: "auto", height: "auto" }} />
                     </div>
                   </Link>
                 ))}
@@ -240,7 +240,7 @@ export function Navbar() {
                     style={{ background: p.gradient }}
                   >
                     <span className="fk-mega-card-text" style={{ color: "#fff" }}>{p.name}</span>
-                    <Image src={p.icon} alt={p.name} width={24} height={24} className="fk-platform-icon" />
+                    <Image src={p.icon} alt={p.name} width={24} height={24} className="fk-platform-icon" style={{ width: "auto", height: "auto" }} />
                   </Link>
                 ))}
               </div>
@@ -249,7 +249,7 @@ export function Navbar() {
                 {platformsCol2.map((p) => (
                   <Link key={p.name} href={p.href} className="fk-mega-card fk-mega-text-only fk-platform-small">
                     <span className="fk-mega-card-text">{p.name}</span>
-                    <Image src={p.icon} alt={p.name} width={18} height={18} className="fk-platform-icon-sm" />
+                    <Image src={p.icon} alt={p.name} width={18} height={18} className="fk-platform-icon-sm" style={{ width: "auto", height: "auto" }} />
                   </Link>
                 ))}
               </div>
@@ -310,7 +310,7 @@ export function Navbar() {
           <div className={`fk-mobile-sub ${mobilePlatformsOpen ? "fk-mobile-sub-open" : ""}`}>
             {[...platformsFeatured, ...platformsCol2].map((p) => (
               <Link key={p.name} href={p.href} className="fk-mobile-sub-link" onClick={() => setMobileOpen(false)}>
-                {"icon" in p && <Image src={p.icon} alt="" width={16} height={16} />}
+                {"icon" in p && <Image src={p.icon} alt="" width={16} height={16} style={{ width: "auto", height: "auto" }} />}
                 {p.name}
               </Link>
             ))}

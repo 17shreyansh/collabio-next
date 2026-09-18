@@ -29,7 +29,7 @@ export function InfluencerAgencyShowcase() {
           <div className="col-span-4 flex flex-col relative z-10">
             {/* Image 1 (Landscape) */}
             <div className="relative group rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[4/3] w-full transform hover:-translate-y-2 hover:-rotate-2 transition-all duration-500 border-[6px] border-white z-10">
-              <a href="https://youtu.be/NVGtISGn1sw?si=k7zTPLA68HLbGefp" target="_blank" rel="noopener noreferrer">
+              <a href="https://youtu.be/NVGtISGn1sw?si=k7zTPLA68HLbGefp" target="_blank" rel="noopener noreferrer" className="relative block w-full h-full">
                 <Image 
                   src={`${ASSET}/images/agency-group-1.webp`} 
                   alt="AORUSIndia PC Build" 
@@ -46,7 +46,7 @@ export function InfluencerAgencyShowcase() {
 
             {/* Image 4 (Portrait) */}
             <div className="relative group rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[4/5] w-[75%] ml-auto -mt-16 transform hover:-translate-y-2 hover:rotate-2 transition-all duration-500 border-[6px] border-white z-20">
-              <a href="https://www.instagram.com/reel/DI3p-xbz9U8/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/reel/DI3p-xbz9U8/" target="_blank" rel="noopener noreferrer" className="relative block w-full h-full">
                 <Image 
                   src={`${ASSET}/images/agency-group-4.webp`} 
                   alt="Fitelo Reel" 
@@ -87,7 +87,7 @@ export function InfluencerAgencyShowcase() {
           <div className="col-span-4 flex flex-col relative z-10">
             {/* Image 2 (Portrait) */}
             <div className="relative group rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[4/5] w-[75%] mr-auto transform hover:-translate-y-2 hover:-rotate-2 transition-all duration-500 border-[6px] border-white z-20">
-              <a href="https://www.instagram.com/reel/DIRCAzaTbgY/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/reel/DIRCAzaTbgY/" target="_blank" rel="noopener noreferrer" className="relative block w-full h-full">
                 <Image 
                   src={`${ASSET}/images/agency-group-2.webp`} 
                   alt="Sleep Company Reel" 
@@ -103,7 +103,7 @@ export function InfluencerAgencyShowcase() {
 
             {/* Image 3 (Landscape) */}
             <div className="relative group rounded-[2.5rem] overflow-hidden shadow-2xl aspect-[4/3] w-full -mt-16 transform hover:-translate-y-2 hover:rotate-2 transition-all duration-500 border-[6px] border-white z-10">
-              <a href="https://www.youtube.com/watch?v=MPnyzJ3TmG4" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/watch?v=MPnyzJ3TmG4" target="_blank" rel="noopener noreferrer" className="relative block w-full h-full">
                 <Image 
                   src={`${ASSET}/images/agency-group-3.webp`} 
                   alt="Tatum Web 3" 

@@ -42,7 +42,7 @@ export function BrandLogosCarousel() {
                 alt={logo.alt}
                 width={120}
                 height={60}
-                className="max-h-full max-w-full object-contain"
+                className="max-h-full max-w-full object-contain w-auto h-auto"
                 loading="lazy"
               />
             </div>

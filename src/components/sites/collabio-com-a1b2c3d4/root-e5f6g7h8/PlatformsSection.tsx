@@ -82,7 +82,7 @@ export function PlatformsSection() {
 
               {/* Glassmorphic Icon Container to fix white-on-white visibility */}
               <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-full p-4 mb-8 shadow-lg w-20 h-20 flex items-center justify-center relative z-20 group-hover:scale-110 group-hover:bg-white/30 transition-all duration-500">
-                <Image src={platform.logo} alt={`${platform.name} logo`} width={40} height={40} className="drop-shadow-lg" />
+                <Image src={platform.logo} alt={`${platform.name} logo`} width={40} height={40} className="drop-shadow-lg w-auto h-auto" />
               </div>
 
               {/* Mockup with enhanced 3D hover effect */}
